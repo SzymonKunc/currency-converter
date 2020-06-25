@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:image" content="kantorek.png"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <body class="body">
+        <div class="container">
+            <h1 class="container__header">Kantor wymiany walut</h1>
+            <form class="form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Wymień pieniążki</legend>
+                    <p class="form__paragraph">
+                        <label>
+                            <span class="form__labelText">Wybrana waluta: </span>
+                            <select class="form__field  js-currency-1" name="currency">
+                                <option value="Euro">EUR</option>
+                                <option value="PLN" selected>PLN</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label>
+                            <span class="form__labelText ">Wpisz kwotę: </span>
+                            <input class="form__field js-amount" type="number" min="1" required>
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label>
+                            <span class="form__labelText">Wymień na: </span>
+                            <select class="form__field js-currency-2" name="currency">
+                                <option value="Euro">EUR</option>
+                                <option value="PLN">PLN</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <span class="form__labelText form__labelText">Kwota:</span>
+                        <input class="form__field form__field js-result" type="number" readonly>
+                    </p>
+                    <p class="form__paragraph">
+                        <button class="form__button js-submit">Zobacz kwotę</button>
+                    </p>
+                </fieldset>
+            </form>
+
+        </div>
+    </body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
